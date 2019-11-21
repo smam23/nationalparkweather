@@ -1,0 +1,381 @@
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Quicksand&display=swap');
+
+/* BELOW ARE UNIVERAL CSS */
+body {
+	background-color: #062805;
+	font-family: 'Quicksand', sans-serif;
+	color: #FFFFFF;
+	background:url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-size: auto;
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  	background-position: center;
+}
+
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	margin: 0px;
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	text-align: center;
+}
+
+header img {
+	height: 100px;
+	position: sticky;
+	top: 0px;
+}
+
+footer {
+   	bottom: 0px;
+   	padding: 25px;
+	text-align: center;
+	color: #002b32;
+}
+
+#navbar {
+	padding: 25px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	position: sticky;
+	z-index: 10;
+	top: 100px;
+	width: 100%;
+	width: 100vw;
+	background-color: black;
+}
+
+#navbar ul {
+	margin: 0;
+  	padding: 0;
+  	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+#navbar li{
+  list-style-type: none;
+}
+
+#navbar a {
+	padding: 25px;
+  	text-decoration: none;
+  	font-size: 25px;
+}
+
+#navbar a:link, #navbar a:visited {
+ 	color: white;
+}
+
+#navbar a:hover, #navbar a:active {
+ 	color: black;
+ 	background-color: gray;
+}
+
+
+/* BELOW ARE CSS FOR HOME PAGE */
+
+#table {
+	margin: 35px 100px 35px 100px;
+}
+
+#home-table {
+	padding: 0px 20px 20px 20px;
+}
+
+#park-list {
+	color: #FFFFFF;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+		"image name"
+		"image description"
+		"image description"
+		"image description"
+		"image description";
+	grid-column-gap: 25px;
+	border-bottom: 1px solid #FFFFFF;
+	line-height: 2.0em;
+	word-spacing: 5px;
+	padding: 35px 0px 35px 0px;
+}
+
+#park-list:last-child{
+	border-bottom: none;
+}
+
+#park-image {
+	padding: 10px;
+	grid-area: image;
+	border-width:10px;
+	height: auto;  
+    border-style:outset;
+    border-color: #061b05;
+}
+
+#park-image img {
+	height: auto;
+	width: 100%;	
+}
+
+#park-name {
+	grid-area: name;
+	height: 30px;
+	font-size: 25px;
+	font-style: bold;
+	text-decoration: none;
+}
+
+#park-list a:link, #park-list a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#park-list a:hover, #park-list a:active {
+	font-size: 35px;
+	color: green;
+}
+
+#bg-white {
+	margin: 35px 100px 35px 100px;
+	background: rgba(0, 0, 0, 0.6);
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* BELOW ARE CSS FOR DETAIL PAGE */
+#park-description {
+	grid-area: description;
+}
+
+#detail-page {
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+		"main facts";
+	grid-column-gap: 0px;
+	overflow-y: scroll;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#detail-main {
+	grid-area: main;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#detail-main img {
+	border-width:10px;  
+    border-style:outset;
+    border-color: #061b05;
+    padding:10px;
+	width: 100%;
+	height: auto;
+}
+
+#quote {
+	font-style: italic;
+	font-size: 25px;
+}
+
+#detail-facts {
+	margin-left: 75px;
+	grid-area: facts;
+}
+
+#fact-table {
+	padding-bottom: 0px;
+}
+
+#park-facts {
+	text-decoration: none;
+	border: none;
+	padding: none;
+}
+
+#park-facts th {
+	padding-right: 100px;
+}
+
+#forecast {
+	margin-top: 20px;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"header header header header"
+		"today today temp temp"
+		"forecast forecast alert alert"
+		"day day day day";
+	background-color: white;
+	opacity: 0.8;
+	color: #002d8c;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;	
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+	font-size: 24px;
+	grid-area: header;
+	margin: 30px 0px 0px 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+	grid-area: today;
+	margin: 10px 0px 10px 0px;
+	background: #FFFFFF;
+	color: #062805;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#temp {
+	grid-area: temp;
+	margin: 10px 0px 10px 0px;
+	background: #FFFFFF;
+	
+}
+
+#temp a{
+	text-decoration: none;
+	color: #062805;
+}
+
+#forecast-main {
+	grid-area: forecast;
+	background: #FFFFFF;
+	color: #062805;
+}
+
+#alert {
+	grid-area: alert;
+	background: #FFFFFF;
+	color: #062805;
+}
+
+#week {
+	display: flex;
+	justify-content: space-evenly;
+	background: #FFFFFF;
+	color: #062805;
+}
+
+#forecast-main img {
+	height: auto;
+	width: 150px;
+	padding-left: 13.75px;
+}
+
+#forecast-main p {
+	margin: 8px 0px 8px 0px;
+	padding-left: 13.75px;
+}
+
+#alert ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#alert li {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#day {
+	grid-area: day;
+	flex-basis: 25%;
+}
+
+#day img {
+	height: auto;
+	width: 75px;
+}
+
+.error {
+	color: #ff2600;
+}
+
+#survey-main {
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	font-size: 20px;
+}
+
+#favorite-parks {
+	color: #FFFFFF;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"favimage name"
+		"favimage vote";
+	grid-column-gap: 25px;
+	border-bottom: 1px solid #FFFFFF;
+	word-spacing: 5px;
+	padding: 35px;
+}
+
+#favorite-image {
+	grid-area: favimage;
+	margin: 0px;
+	padding: 0px;
+	border-width:10px;  
+    border-style:outset;
+    border-color: #061b05;
+}
+
+border-width:10px;  
+    border-style:outset;
+    border-color: #061b05;
+    padding:10px;
+	width: 100%;
+	height: auto;
+
+#favorite-image img {
+	width: 100%;
+	height:100%;
+}
+
+#favorite-park {
+	grid-area: name;
+}
+
+#favorite-park-votes {
+	grid-area: vote;
+}
+
+.fav-table {
+	margin: 35px 100px 35px 100px;
+}
+
+#favorite-park {
+}
+
+#favorite-parks a {
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+}
+
+#favorite-park-votes {
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 30px;
+}
+
+@media(min-width:400px;) {
+}
+
+
